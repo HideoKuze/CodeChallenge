@@ -5,7 +5,6 @@ import datetime
 from datetime import timedelta
 import time
 from datetime import date
-import os
 import sqlite3
 
 
