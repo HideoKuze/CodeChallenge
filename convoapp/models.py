@@ -8,3 +8,5 @@ class InputInfo(models.Model):
 	conversation_id = models.CharField(max_length=4, blank=False)
 	message_body = models.TextField(blank=False)
 	created = models.DateTimeField(default=timezone.now)
+	#this is for using datetime.date.today() in tasks.py
+	date_without_time = models.DateField(default=timezone.now)
