@@ -12,6 +12,6 @@ Follow steps to download message broker and Erlang (http://www.rabbitmq.com/down
 Run `celery -A tasks worker --loglevel=info` to start the worker process
 Open a second terminal and run the python shell (`python manage.py shell`)
 Then `from convoapp import tasks` then `from tasks import show` 
-then `show.delay()` Note: Make sure to run `post_requests` once populate the `SQLite` database 
+then `show.delay()` Note: Make sure to run `post_requests.py` once populate the `SQLite` database 
 
 Thank you for considering me for this challenge =)
