@@ -17,4 +17,6 @@ Open a second terminal and run the python shell (`python manage.py shell`)
 Then `from convoapp import tasks` then `from tasks import show` 
 then `show.delay()` Note: Make sure to run `post_requests.py` once populate the `SQLite` database 
 
+PLEASE let me now if there are any issues,
+
 Thank you for considering me for this challenge =)
