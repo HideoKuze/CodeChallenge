@@ -10,15 +10,15 @@ import sqlite3
 
 
 app = Celery('tasks', broker='amqp://guest@localhost//')
-app.config_from_object('convoapp.celeryconfig')
 
-# bug here, tasks won't execute periodically, but work when run manually
+# --- bug here, tasks won't execute periodically, but work when run manually ---
 CELERYBEAT_SCHEDULE = {
     'add-every-5-sec': {
         'task': 'tasks.show',
         'schedule': timedelta(seconds=5),
     },
 }
+# ------------------------------------------------------------------------------
 
 CELERY_TIMEZONE = 'UTC'
 
